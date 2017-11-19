@@ -12,6 +12,7 @@
 
 import numpy as np
 import classes
+import sys
 import os
 
 EPOCHS = 1
@@ -20,8 +21,8 @@ def run(args, network):
     if args[1] == '--train' and len(args) == 2:
         print "Training ..."
         for i in range(EPOCHS):
-            data = np.loadtxt("data/train", delimiter=',')
-            verify = np.loadtxt("data/test", delimiter=',')
+            data = np.loadtxt("data/train.csv", delimiter=',', skiprows=1, usecols=)
+            verify = np.loadtxt("data/test.csv", delimiter=',', skiprows=1, usecols=)
             X = data[:,0:9]
             Y = data[:,9:]
             X_ = verify[:,0:9]
