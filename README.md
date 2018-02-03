@@ -1,2 +1,2 @@
 # Kaggle---Titanic-ML
-Title^
+Unfinished project to practice writing Neural Networks.
